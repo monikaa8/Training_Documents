@@ -1,0 +1,80 @@
+
+##########################
+Day - 29 | 22nd May 2026
+##########################
+
+	Monitoring Tools : Prometheus/Grafana 
+	
+	- Continuous Monitoring ::::
+	
+		- Used to ensure business Continuity 
+		
+		- The Application and the Infra-Structure is highly avaiable.
+		
+		Infra-Structure Monitoring :::
+		
+			CPU		--> Level --> Threshold Limit -> 80% -> Alarm -> Webhook triggers
+				
+			Memory	--> Level --> Threshold Limit -> 75% -> Alarm -> Webhook triggers
+			
+			Network Traffic --> Level --> Threshold Limit -> 80% -> Alarm -> Webhook triggers -> Auto-Scaling Groups / LB
+			
+		
+			Tools: 	Prometheus/Grafana,Splunk,Dynatrace,Nagios
+					Jenkins Jobs, Ansible 					
+	
+		Application Monitoring :::
+		
+			- AppDynamics/DataDog ==> Performance Testing 
+			
+	
+	- Prometheus/Grafana :
+	
+	
+		- Prometheus		# Is the Monitor Tool/Service 
+							# Used for Infra-Structure Monitoring
+							# Prometheus act as a Data Source to Grafana
+							
+		- Grafana 			# Visualization Tool 
+							Grafana uses the monitoring metrics from Prometheus and Prepare Monitoring Dashboards
+		
+
+	- Architecture of Monitoring Tools :::
+	
+		Monitoring Server 
+			- Target Servers
+			
+	- Working with Prometheus/Grafana :
+	
+		- Download Prometheus
+		
+		- Create Prometheus Services
+
+	-	Architecture of Monitoring Tools:	
+
+		- Based on Client Server Architecture
+		- Based on Agents 
+		
+		- Production Monitoring Team ::::
+		
+	
+	- Setup the Prometheus and Grafana Monitor Server:		
+	
+		Time Series DataBase - used to maintain the monitoring metrics
+		
+		PromQL Expressions/Queries to query the data from Time Series Database
+		
+		
+	- Prepare Monitoring Dashboards ::::	
+	
+		- Integrate Prometheus & Grafana :::
+		
+		- Create Monitoring Dashboards ::::		
+		
+		- Launch an EC2 Instance 
+			- Install Prometheus, Create Prometheus Service & Install Grafana 
+				- Execute Prometheus & Grafana as service.
+				
+		
+
+
